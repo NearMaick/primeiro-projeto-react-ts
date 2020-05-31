@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import styled, { css } from 'styled-components';
 import { shade } from 'polished';
 

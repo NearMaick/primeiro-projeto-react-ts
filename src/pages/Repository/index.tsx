@@ -1,7 +1,18 @@
 import React from 'react';
+import { useRouteMatch } from 'react-router-dom';
+
+import logoImg from '../../assets/logo.svg';
+
+import { Header } from './styles';
+
+interface RepositoryParams {
+  repository: string;
+}
 
 const Repository: React.FC = () => {
-  return <h1>Repository</h1>;
+  const { params } = useRouteMatch<RepositoryParams>();
+
+  return <Header />;
 };
 
 export default Repository;
